@@ -1,0 +1,59 @@
+* {{ cookiecutter.project_name }}
+
+{{ cookiecutter.project_description }}
+
+** TODO Fill me in
+
+* Requirements
+
+- [[https://www.quicklisp.org/beta/][Quicklisp]]
+
+* Installation
+
+Clone the repo in your [[https://www.quicklisp.org/beta/faq.html][Quicklisp local-projects]] directory.
+
+#+begin_src lisp
+(ql:register-local-projects)
+#+end_src
+
+Then load the system.
+
+#+begin_src lisp
+(ql:quickload :${PROJECT_NAME})
+#+end_src
+
+* Usage
+
+** TODO Fill me in
+
+* Tests
+
+The ={{ cookiecutter.project_name }}= tests are provided as part of the
+=:{{ cookiecutter.project_slug }}.test= system.
+
+In order to run the tests you can evaluate the following expressions.
+
+#+begin_src lisp
+CL-USER> (ql:quickload :{{ cookiecutter.project_slug }}.test)
+CL-USER> (asdf:test-system :{{ cookiecutter.project_slug }}.test)
+#+end_src
+
+Or you can run the tests using the =scripts/run-tests.sh= shell script
+instead, e.g.
+
+#+begin_src shell
+env LISP=sbcl ./scripts/run-tests.sh
+#+end_src
+
+* Contributing
+
+={{ cookiecutter.project_name }}= is hosted on [[{{ cookiecutter._repo_url }}][Github]]. Please contribute by reporting
+issues, suggesting features or by sending patches using pull requests.
+
+* Authors
+
+- {{ cookiecutter.author_name }} <[[mailto:{{ cookiecutter.author_email }}][{{ cookiecutter.author_email }}}]]>
+
+* License
+
+This project is Open Source and licensed under the {{ cookiecutter.license }} license.

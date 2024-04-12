@@ -1,0 +1,3 @@
+* {% now 'utc', '%Y-%m-%d' %}
+- Initial version of ={{ cookiecutter.project_name }}=
+

@@ -47,7 +47,7 @@
   :maintainer "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"
   :license "{{ cookiecutter.license }}"
   :long-description #.(uiop:read-file-string
-                       (uiop:subpathname *load-pathname* "README.org"))
+                      (uiop:subpathname *load-pathname* "README.org"))
   :homepage "{{ cookiecutter._repo_url }}"
   :bug-tracker "{{ cookiecutter._issues_url }}"
   :source-control "{{ cookiecutter._repo_url }}"
@@ -71,7 +71,6 @@
                 )
                )
   :in-order-to (
-                (test-op (test-op :{{ cookiecutter.project_slug }}/test))
+$                (test-op (test-op :{{ cookiecutter.project_slug }}.test))
                 )
   )
-

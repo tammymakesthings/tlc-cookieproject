@@ -1,3 +1,9 @@
+#+TITLE: {{ cookiecutter.project_name }}
+#+AUTHOR: {{ cookiecutter.author_name }}
+#+DATE: {% now 'utc', ’%Y-%m-%d' %}
+#+SEQ_TODO: TODO(t) INPROGRESS(i) TESTING(s) | DONE(d) WONTDO(w)
+#+STARTUP: show5levels hidedrawers hidestars align
+
 * {{ cookiecutter.project_name }}
 
 {{ cookiecutter.project_description }}

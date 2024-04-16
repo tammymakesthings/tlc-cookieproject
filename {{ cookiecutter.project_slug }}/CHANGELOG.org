@@ -1,3 +1,7 @@
+#+TITLE: {{ cookiecutter.project_name}} CHANGE LOG
+#+AUTHOR: {{ cookiecutter.author_name}} <{{ cookiecutter.author_email }}>
+#+DATE: {% now 'utc', '%Y-%m-%d' %}
+
 * {% now 'utc', '%Y-%m-%d' %}
 - Initial version of ={{ cookiecutter.project_name }}=
 

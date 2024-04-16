@@ -1,12 +1,12 @@
 {
-    "author_name": "Tammy Cravit",
-    "author_email": "tammy.cravit@flywheeldigital.com",
-    "github_username": "tammymakesthings",
-    "project_name": "Common Lisp Project",
-    "project_description": "My Awesome Project",
-    "version": "0.1.0",
-    "project_slug": "{{ cookiecutter.project_name | slugify }}",
-    "project_year": "{% now 'utc', '%Y' %}",
-    "_repo_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug}}/",
-    "_issues_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug}}/issues"
+  "author_name": "Tammy Cravit",
+  "author_email": "tammy.cravit@flywheeldigital.com",
+  "github_username": "tammymakesthings",
+  "project_name": "Common Lisp Project",
+  "project_description": "My Awesome Project",
+  "version": "0.1.0",
+  "project_slug": "{{ cookiecutter.project_name | slugify }}",
+  "project_year": "{% now 'utc', '%Y' %}",
+  "_repo_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug}}/",
+  "_issues_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug}}/issues"
 }

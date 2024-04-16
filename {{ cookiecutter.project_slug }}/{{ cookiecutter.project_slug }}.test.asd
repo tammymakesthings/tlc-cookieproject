@@ -35,13 +35,13 @@
 
 (in-package :cl-user)
 
-(defpackage :{{ cookiecutter.project_slug }}/test/system
+(defpackage :{{ cookiecutter.project_slug }}.test.system
   (:use :cl :asdf))
 
-(in-package :{{ cookiecutter.project_slug }}/test/system)
+(in-package :{{ cookiecutter.project_slug }}.test.system)
 
-(defsystem "{{ cookiecutter.project_slug }}/test"
-  :name "{{ cookiecutter.project_slug }}/test"
+(defsystem "{{ cookiecutter.project_slug }}.test"
+  :name "{{ cookiecutter.project_slug }}.test"
   :long-name "{{ cookiecutter.project_name }}"
   :description "{{ cookiecutter.project_description }}"
   :version "{{ cookiecutter.version }}"
@@ -59,7 +59,6 @@
                              )
                 )
                )
-  :perform (test-op (op c) 
-                    (symbol-call :fiveam :run! 
-                                 (find-symbol* :{{ cookiecutter.project_slug }} :{{ cookiecutter.project_slug }}/test))))
-
+  :perform (test-op (op c)
+                    (symbol-call :fiveam :run!
+                                 (find-symbol* :{{ cookiecutter.project_slug }} :{{ cookiecutter.project_slug }}.test))))
